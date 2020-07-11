@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<style>
+    body
+    {
+        text-align: center;
+        background-image: url('image/clock.SVG') ;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+    #watch
+    {
+        background-color: rgba(112, 7, 7, 0.842);
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        margin-top: 80px;
+        border-radius: 250px;
+        
+    }
+    h1
+    {
+        margin-top: 150px;
+        display: inline-block;
+        width: 110px;
+        font-size: 4em;
+        background-color: rgb(248, 222, 184);
+    }
+    h2
+    {
+        display: inline-block;
+        width: 110px;
+        font-size: 2em;
+        color: cornsilk;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #time
+    {
+        margin-top: -190px;
+    }
+    button
+    {
+        margin-top: 150px;
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        border-radius: 90px;
+        color: cornsilk;
+        background-color: rgb(18, 20, 20);
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    button:hover
+    {
+        background-color: cornflowerblue;
+    }
+    #buton:disabled
+    {
+        background-color: red;
+    }
+</style>
+<body> 
+    
+ 
+        <div id="watch">
+            <h1 id="bhr">0</h1>
+            <h1 id="bmin">0</h1>
+            <h1 id="bsec">0</h1>
+        </div>
+
+        <div id="time">
+            <h2>HR</h2> 
+            <h2>MIN</h2>
+            <h2>SEC</h2>
+        </div>
+
+        <div id="button">
+           <button onclick="start()" id="buton">START</button>
+           <button onclick="pause()" id="pause">PASUE</button>
+           <button onclick="reset()">RESET</button>
+        </div>
+
+        <audio  loop id="audio">   
+            <source src="clock.mp3" />   
+            </audio>
+
+
+
+    
+</body>
+</html>
